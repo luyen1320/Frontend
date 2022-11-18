@@ -6,6 +6,7 @@ import { LANGUAGES } from "../../utils/constant";
 import "./HomeHeader.scss";
 import { changeLanguageApp } from "../../store/actions/appActions";
 // import {withRouter} from 'react-router';
+// import { logo } from "../../assets/images/logo.svg";
 
 class HomeHeader extends Component {
   changeLanguage = (language) => {
@@ -27,6 +28,7 @@ class HomeHeader extends Component {
             <div className="left-content">
               <i className="fas fa-bars"></i>
               <div className="header-logo" onClick={() => this.returnToHome()}>
+                {/* <img src={logo} /> */}
                 LOGO
               </div>
             </div>
